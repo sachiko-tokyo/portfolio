@@ -1,0 +1,111 @@
+#contact {
+    color: $basic-color;
+    padding: 50px;
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 36px;
+
+        @include xxl {
+            font-size: 36px;
+            padding-top: 160px;
+        }
+
+        @include xl {
+            font-size: 36px;
+            padding-top: 160px;
+        }
+
+        @include lg {
+            font-size: 20px;
+            padding-top: 160px;
+        }
+
+        @include md {
+            font-size: 28px;
+        }
+
+        @include sm {
+            font-size: 24px;
+            padding-top: 120px;
+        }
+        
+    }
+    p {
+        text-align: center;
+        font-size: 48px;
+        @include md {
+            font-size: 24px;
+        }
+        @include sm {
+            font-size: 18px;
+        }
+        a {
+            color: $basic-color;
+            text-decoration: none;
+            transition: .8s;
+            &:hover {
+                color: $basic-gold;
+            }
+        }
+    }
+}
+
+.contact-div-button {
+    text-align: center;
+    padding: 50px;
+    @include sm {
+        padding: 5px;
+    }
+}
+
+.contact-btn {
+    color: $basic-color;
+    font-family: $font-family-basic;
+    padding: 20px 40px;
+    background: none;
+    border: none;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 3px;
+    justify-self: center;
+    a {
+        text-decoration: none;
+        color: $basic-color;
+        z-index: 3;
+    }
+    @include sm {
+        padding: 15px 30px;
+        font-size: 14px;
+        margin: 10px auto;
+        letter-spacing: 1px;
+    }
+    cursor: pointer;
+    &:after, &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 2px solid $basic-color;
+        transition: transform .2s;
+}
+     &:after {
+       transform: translate(3px, 3px);
+}
+     &:before {
+       transform: translate(-3px, -3px);
+}    &:hover {
+       &:after, &:before {
+         transform: translate(0);
+}
+    }
+}
+
+.contact-btn__message {
+    @include sm {
+        font-size: 10px;
+    }
+}

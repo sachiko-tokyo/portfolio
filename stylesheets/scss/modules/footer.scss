@@ -1,0 +1,8 @@
+footer {
+    color: $basic-color;
+    font-size: $font-size-sm-basic;
+    padding: 10px;
+    @include sm {
+        font-size: 12px;
+    }
+}

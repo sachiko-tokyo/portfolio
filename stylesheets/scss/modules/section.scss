@@ -1,0 +1,19 @@
+.section-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about {
+    background: $background-basic;
+    padding: 5vh 10vw;
+}
+
+.section-works {
+    background: $background-basic;
+    width: 100vw;
+}
+
+.section-contact {
+    background: #fff;
+}

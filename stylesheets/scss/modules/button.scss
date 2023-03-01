@@ -1,0 +1,114 @@
+.btn-resume {
+    button {
+        font-weight: 200;
+        background: $basic-color;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px solid $basic-color;
+        margin-right: 25px;
+        font-family: $font-family-basic;
+        transition: .7s;
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: .7s;
+            }
+            &:hover {
+                background: #fff;
+                cursor: pointer;
+                a {
+                    color: $basic-color;
+                }
+            }
+    }
+}
+
+.btn-send-msg {
+    button {
+        font-weight: 200;
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-right: 25px;
+        color: $basic-color;
+        font-family: $font-family-basic;
+        transition: .7s;
+            a {
+                text-decoration: none;
+                color: #999;
+                transition: .7s;
+            }
+            &:hover {
+                background: #fff;
+                cursor: pointer;
+                border: 1px solid $basic-gold;
+                a {
+                    color: $basic-gold;
+                }
+            }
+    }
+    @include sm {
+        display: none;
+    }
+}
+
+.btn-send-msg_mobile {
+    display: none;
+
+    @include sm {
+        display: block;
+        button {
+            padding: 10px 15px;
+            font-weight: 200;
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 25px;
+            color: $basic-color;
+            i {
+                text-decoration: none;
+                color: #999;
+            }
+            &:hover {
+                background: #fff;
+                transition: .7s;
+                cursor: pointer;
+                border: 1px solid $basic-color;
+                i {
+                    color: $basic-color;
+                    transition: .7s;
+                }
+            }
+        }
+    }
+}
+
+.btn-contactus {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn-contact-form {
+    outline: none;
+    font-weight: 200;
+    color: $background-basic;
+    background: $basic-color;
+    border-radius: 45px;
+    border: 1px solid $basic-color;
+    margin-bottom: 20px;
+    cursor: pointer;
+    @include xxl {
+        padding: 15px 25px;
+    }
+    @include xl {
+        padding: 15px 25px;
+    }
+    @include lg {
+        padding: 10px 15px;
+    }
+    @include sm {
+        padding: 10px 15px;
+    }    
+    
+}
