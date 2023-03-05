@@ -18,7 +18,7 @@
     width: 40%;
     text-align: center;
     padding-left: 150px;
-    padding-top: 200px;
+    // padding-top: 200px;
     @include lg {
         padding: 0;
     }
@@ -38,7 +38,7 @@
 .main-desc-p {
     padding-left: 5vw;
     font-size: 24px;
-    line-height: 1.7;
+    line-height: 1.5;
     color: $basic-color;
     font-family: futura-pt,sans-serif;
     font-weight: 700;

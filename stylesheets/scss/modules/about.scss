@@ -31,11 +31,11 @@
 }
 
 .about-all {
-    margin-top: 100px;
+    margin: 100px auto;
     justify-content: space-evenly;
     @include sm {
         flex-direction: column;
-        margin-top: 0;
+        margin: 0 auto;
     }
 }
 
@@ -100,12 +100,12 @@
 .about-title-p {
     color: $basic-color;
     font-size: 18px;
-    width: 70%;
+    width: 100%;
     margin-top: 10px;
     padding: 15px 0px;
     line-height: 1.8;
     i {
-        margin-right: 5px;
+        margin-right: 10px;
     }
     @include lg {
         width: 55%;

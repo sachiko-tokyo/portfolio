@@ -1,13 +1,8 @@
 $(function() {
 
-    // $('.nav-toggle').on('click', function() {
-    //     console.log('VicRoy: ')
-    //     $('.nav-toggle, .nav-second-nav').toggleClass('show');
-    // });
-
     $(function(){
         $('.btn-trigger').on('click', function() {
-          $(this).toggleClass('active');
+          // $(this).toggleClass('active');
 
           // remove "fadeInDown" class before jumping to another section
           if ($(this).hasClass('active')) {
@@ -16,6 +11,8 @@ $(function() {
               items.map(i => {
                   i.classList.remove('fadeInDown')
               })
+              $(this).toggleClass('active');
+              $('body').css('overflow', 'hidden');
           }
 
           $('.nav-toggle, .nav-second-nav').toggleClass('show');
