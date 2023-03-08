@@ -2,16 +2,20 @@
     button {
         font-weight: 200;
         background: $basic-color;
-        padding: 10px 15px;
+        padding: 15px 30px;
         border-radius: 5px;
         border: 1px solid $basic-color;
         margin-right: 25px;
         font-family: $font-family-basic;
         transition: .7s;
+        @include sm {
+            height: 64px;
+        }
             a {
                 text-decoration: none;
                 color: #fff;
                 transition: .7s;
+                font-size: 16px;
             }
             &:hover {
                 background: #fff;
@@ -27,7 +31,7 @@
     button {
         font-weight: 200;
         background: #fff;
-        padding: 10px 15px;
+        padding: 15px 30px;
         border-radius: 5px;
         border: 1px solid #ccc;
         margin-right: 25px;
@@ -38,6 +42,7 @@
                 text-decoration: none;
                 color: #999;
                 transition: .7s;
+                font-size: 16px;
             }
             &:hover {
                 background: #fff;
@@ -59,13 +64,14 @@
     @include sm {
         display: block;
         button {
-            padding: 10px 15px;
+            padding: 10px 20px;
             font-weight: 200;
             background: #fff;
             border-radius: 5px;
             border: 1px solid #ccc;
             margin-right: 25px;
             color: $basic-color;
+            height: 64px;
             i {
                 text-decoration: none;
                 color: #999;

@@ -28,16 +28,20 @@ footer {
 .btn-resume button {
   font-weight: 200;
   background: #666B68;
-  padding: 10px 15px;
+  padding: 15px 30px;
   border-radius: 5px;
   border: 1px solid #666B68;
   margin-right: 25px;
   font-family: "Lato", sans-serif;
   transition: .7s; }
+  @media (max-width: 375px) {
+    .btn-resume button {
+      height: 64px; } }
   .btn-resume button a {
     text-decoration: none;
     color: #fff;
-    transition: .7s; }
+    transition: .7s;
+    font-size: 16px; }
   .btn-resume button:hover {
     background: #fff;
     cursor: pointer; }
@@ -47,7 +51,7 @@ footer {
 .btn-send-msg button {
   font-weight: 200;
   background: #fff;
-  padding: 10px 15px;
+  padding: 15px 30px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-right: 25px;
@@ -57,7 +61,8 @@ footer {
   .btn-send-msg button a {
     text-decoration: none;
     color: #999;
-    transition: .7s; }
+    transition: .7s;
+    font-size: 16px; }
   .btn-send-msg button:hover {
     background: #fff;
     cursor: pointer;
@@ -75,13 +80,14 @@ footer {
     .btn-send-msg_mobile {
       display: block; }
       .btn-send-msg_mobile button {
-        padding: 10px 15px;
+        padding: 10px 20px;
         font-weight: 200;
         background: #fff;
         border-radius: 5px;
         border: 1px solid #ccc;
         margin-right: 25px;
-        color: #666B68; }
+        color: #666B68;
+        height: 64px; }
         .btn-send-msg_mobile button i {
           text-decoration: none;
           color: #999; }
@@ -933,7 +939,7 @@ footer {
   padding: 15px;
   line-height: 1.5; }
   .about-role-name h3 {
-    font-size: 18px; }
+    font-size: 20px; }
   @media (max-width: 1024px) {
     .about-role-name {
       text-align: center;
@@ -952,7 +958,7 @@ footer {
 
 .about-title-p {
   color: #666B68;
-  font-size: 18px;
+  font-size: 20px;
   width: 100%;
   margin-top: 10px;
   padding: 15px 0px;
@@ -969,6 +975,7 @@ footer {
       margin: 0 auto; } }
   @media (max-width: 375px) {
     .about-title-p {
+      font-size: 18px;
       width: 100%; } }
 
 .about-links {
@@ -990,7 +997,8 @@ footer {
   .about-links i {
     padding: 10px;
     color: #666B68;
-    transition: .7s; }
+    transition: .7s;
+    font-size: 34px; }
     .about-links i:hover {
       color: #BFB378;
       transform: scale(1.3); }
