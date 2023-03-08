@@ -1025,12 +1025,13 @@ footer {
       flex-wrap: nowrap; } }
 
 .about-right {
-  align-self: center; }
+  align-self: center;
+  position: relative; }
 
 .about-right-img {
-  position: relative; }
+  position: relative;
+  z-index: 2; }
   .about-right-img img {
-    z-index: 2;
     width: 380px; }
     @media (max-width: 1440px) {
       .about-right-img img {
@@ -1052,7 +1053,7 @@ footer {
   top: 160px;
   left: 160px;
   background-color: #BFB378;
-  z-index: -1; }
+  z-index: 0; }
   @media (max-width: 1024px) {
     .about-right-square {
       display: none; } }
