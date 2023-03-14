@@ -50,6 +50,7 @@ header {
     height: 60px;
     font-size: 16px;
     background: #fafafa;
+    z-index: 10;
 
     @include xxl {
         height: 60px;
